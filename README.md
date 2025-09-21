@@ -1,3 +1,61 @@
+# 🎥 Form Frontend (React + TypeScript)
+
+This is the **frontend** part of the Form Management System.  
+It allows users to fill in a form and capture **live photos directly from their camera** (no upload from memory option).  
+The captured data is then sent to the **Spring Boot backend**, where it is stored in PostgreSQL and images are uploaded to Cloudinary.  
+
+---
+
+## ✨ Features
+
+- **Form Submission UI**
+  - Users can fill in form fields.
+  - Live photo capture using device camera.
+  - Form data + live photo are sent to the backend API.
+
+- **Live Photo Capture**
+  - No gallery or memory upload allowed.
+  - Camera opens directly in the browser/app.
+  - Captured photo is compressed and sent to backend for Cloudinary upload.
+
+- **Admin Section (Frontend)**
+  - Admins can log in to view submitted data.
+  - Secure routes for admin access.
+  - OTP-based forgot password flow (works with backend).
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React (with TypeScript + Hooks)  
+- **Styling:** TailwindCSS / CSS Modules (your choice)  
+- **API Calls:** Axios / Fetch to Spring Boot backend  
+- **Camera Capture:** Browser `MediaDevices.getUserMedia` API  
+- **Authentication:** JWT + OTP (integrated with backend)  
+
+---
+
+## 🚀 Future Work / Deployment
+
+- Currently not deployed.  
+- Deployment options:  
+  - **Frontend:** Vercel / Netlify / AWS Amplify  
+  - **Backend:** Render / Railway / AWS EC2  
+  - **DB:** PostgreSQL (Supabase / Neon / AWS RDS)  
+  - **Image Storage:** Cloudinary  
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone the repo  
+   ```bash
+   git clone <your-frontend-repo-url>
+   cd frontend
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
